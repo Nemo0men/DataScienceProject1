@@ -27,62 +27,30 @@ The software used for this project was Google Colab and Google Drive. The langua
 ##Section 2: Map of your documentation
 Below is an outline illustrating the hierarchy of the folders and the files stored in each
 
-Project-Repository/
-│
-├── README.md
-│   └── Overview, software requirements, documentation map, and reproduction instructions
-│
-├── LICENSE.md
-│   └── MIT License describing terms of use and citation
-│
-├── SCRIPTS/
-│   ├── 01_data_import_and_cleaning.py
-│   │   └── Loads raw data and performs initial cleaning
-│   ├── 02_feature_engineering.py
-│   │   └── Creates derived variables used in analysis
-│   ├── 03_analysis_models.py
-│   │   └── Runs statistical / machine learning models
-│   └── 04_generate_outputs.py
-│       └── Produces tables and figures saved to OUTPUT/
-│
-├── DATA/
-│   ├── raw/
-│   │   └── original_dataset.csv
-│   ├── processed/
-│   │   └── final_analysis_dataset.csv
-│   └── Data_Appendix.pdf
-│       └── Descriptive statistics, variable definitions, and dataset documentation
-│
-└── OUTPUT/
-    ├── figures/
-    │   ├── figure_1.png
-    │   └── figure_2.png
-    ├── tables/
-    │   └── summary_statistics.csv
-    └── model_results.txt
+**README.md**  
+- Overview of the project, software and platform used, documentation map, and instructions for reproducing results
 
+**LICENSE.md**  
+- Terms for citing and reproducing the repository
 
-README.md
-* Software and platform, map of documentation, and instructions for reproducing results
+**SCRIPTS/**  
+- `eda_movie_sentiment.ipynb` – Code used to perform exploratory data analysis (EDA)  
+- `movie_review_sentiment_model.ipynb` – Code used to create the linear regression model
 
-LISCENSE.md
-* Terms in which the repositor can be cited and reproduced
+**DATA/**  
+- `movie_data/` – Original dataset obtained from Kaggle (before cleaning)  
+- `movieData_cleaned/` – Cleaned version of the dataset for analysis
 
-SCRIPTS/
-* eda_movie_sentiment.ipynb: Code used to create EDA
-* movie_review_sentiment_model.ipynb: Code used to create linear regression model
+**OUTPUT/**  
+- `classification_report.txt` – Text report containing precision, recall, F1 score, and support  
+- `confusion_matrix_logistic_regression.png` – Confusion matrix for logistic regression results  
+- `original_score_vs_polarity.png` – Linear regression plot of original score vs. polarity score  
+- `score_distribution.png` – Histogram of normalized Rotten Tomato scores and frequency  
+- `score_polarity.png` – Histogram of polarity scores and frequency  
+- `movie_sentiment_model.joblib` – Serialized machine learning model for predicting movie review sentiment
 
-DATA/
-* movie_data: Containscsv file of original data obtained from Kaggle (before cleaning)
-* movieData_cleaned: Contains csv file of cleaned data
-Project-Repository/
-
-OUPUT/
-* classification_report.txt: Image containing information about the precision, recall, f1 score, and support
-* confusion_matrix_logistic_regression.png: Image of confusion matrix logistic regression results
-* original_score_vs_polarity.png: Image of linear regression model of orginal score vs. polarity score
-* score_distribution.png: Histogram of normalized rotten tomato score and the frequency
-* score_polarity.png: Histogram of polarity score and frequency
+**REFERENCES.md**  
+- References to the Kaggle site and other sources used
 
 
 ## git pushing:
