@@ -18,8 +18,15 @@ In this section, you should give explicit step-by-step instructions to reproduce
 
 
 
-## git pushing:
+## How to Run
+1.  Install Dependencies
+pip install -r requirements.txt
 
-git add .
-git commit -m "i changed this..."
-git push
+
+
+2. Run notebooks in order:
+
+- eda_movie_sentiment.ipynb
+- movie_review_sentiment_textblob_target.ipynb
+- rt_score_influence_random_forest.ipynb
+- critic_sentiment_all_features.ipynb
