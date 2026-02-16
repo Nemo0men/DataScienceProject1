@@ -1,5 +1,5 @@
 # DataScienceProject
-UVA class 4002: Data Science Project
+DS 4002: Data Science Project
 
 ## Section 1: Software and platform section
 The software used for this project was Google Colab and Google Drive. The language used was Python (3.12.4). Additionally, the platform that was used was a Windows, and the following packages were used for this project:
